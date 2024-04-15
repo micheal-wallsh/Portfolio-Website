@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+header > h2 {
+  text-align: center;
+  font-family: cubano, sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 5vw;
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+header > p {
+  width: 1000px;
+  align-self: center;
+  text-align: center;
+  font-size: 1.5vw;
+  color: white;
+}
+
+footer {
+  margin: auto;
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+}
+
+footer > div > p {
+  text-align: center;
+  font-size: 1vw;
+  color: white;
+}
+
+.portfolioItem {
+  background-color: rgba(128, 128, 128, 0.438);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 50px;
+  transition: scale 0.2s ease-in-out;
+}
+
+.portfolioItem:hover {
+  background-color: rgba(128, 128, 128, 0.747);
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.portfolioItem > img {
+  margin-top: 10px;
+  margin-left: 90px;
+  height: 200px;
+  width: 300px;
+}
+
+.contactLinks {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.747);
+  border-radius: 50px;
+  transition: scale 0.2s ease-in-out;
+}
+
+.contactLinks:hover {
+  scale: 1.1;
+}
+
+.contactLinks > a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.contactLinks > a > img {
+  display:inline-block;
+  height: 100%;
+  width: 100%;
+} 
